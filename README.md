@@ -267,6 +267,42 @@ If you use **MultiVeg** in your research, please cite the associated paper:
 }
 ```
 ---
+
 ## License
+
+The MultiVeg dataset is released under **component-wise licenses**:
+
+- **Image patches (`images/`)**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+- **Annotation masks (`masks/`)**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+### What this means
+
+- The **image patches** may be shared and adapted for **non-commercial purposes only**, with appropriate attribution.
+- The **annotation masks** may be shared and adapted, including for **commercial use**, with appropriate attribution.
+
+### Attribution Requirement
+
+If you use MultiVeg in your research or project, please:
+
+1. Give appropriate credit to the MultiVeg project and authors
+2. Provide a link to the corresponding license
+3. Indicate whether changes were made
+4. Cite the associated publication
+
+### Important Note
+
+These licenses apply to the distributed components of the MultiVeg dataset as released in this repository.  
+Users are responsible for complying with any additional terms or restrictions that may apply to upstream or third-party source imagery, if relevant.
+
+---
+
+## Contact
+
+If you have any question or requirement regarding the MultiVeg, please contact:
+ - *Changhui Lee*
+ - **Email**: ckdgml914@seoultech.ac.kr
+
+---
+
 
 
