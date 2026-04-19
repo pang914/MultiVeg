@@ -6,7 +6,11 @@
 [![Paper](https://img.shields.io/badge/Paper-Remote%20Sensing-B31B1B)](#citation)
 [![Dataset](https://img.shields.io/badge/Dataset-MultiVeg-1F6FEB)](#dataset-access)
 [![RSIP Lab](https://img.shields.io/badge/RSIP-SeoulTech-0A66C2)](https://sites.google.com/view/rsip/home)
-[![License](https://img.shields.io/badge/License-See%20Section-9E9E9E)](#license)
+<br>
+[![Data License](https://img.shields.io/badge/Data%20License-Mixed-blueviolet)](#license)
+[![Images License](https://img.shields.io/badge/Images-CC%20BY--NC%204.0-orange)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Masks License](https://img.shields.io/badge/Masks-CC%20BY%204.0-brightgreen)](https://creativecommons.org/licenses/by/4.0/)
+
 
 <br>
 
