@@ -63,6 +63,7 @@ We also welcome suggestions, academic discussions, and potential collaborations.
 
 - **2026.04.19** — README reorganized with polished project layout, mixed-license clarification, updated dataset access, and visual documentation sections.
 - **2025.12.22** — The MultiVeg paper was officially published in *Remote Sensing*. [Paper](https://doi.org/10.3390/rs18010028)
+- **2025.12.17** — Repository initialized with placeholder README for upcoming MultiVeg dataset release.
 - **2025.12.15** — The MultiVeg paper was accepted for publication in *Remote Sensing*.
 
 > Future updates, including dataset revisions, additional benchmark results, and repository improvements, will be tracked in this section.
