@@ -1,11 +1,11 @@
-<div align="center">
+<img width="4406" height="2351" alt="그림16" src="https://github.com/user-attachments/assets/0fdde694-1c37-4d43-ba16-99939f2e2e02" /><div align="center">
 
 # MultiVeg: A Very High-Resolution Benchmark for Deep Learning-Based Multi-Class Vegetation Segmentation
 
 [![Project Page](https://img.shields.io/badge/Project%20Page-GitHub-181717?logo=github)](https://github.com/pang914/MultiVeg)
 [![Paper](https://img.shields.io/badge/Paper-Remote%20Sensing-B31B1B)](#citation)
 [![Dataset](https://img.shields.io/badge/Dataset-MultiVeg-1F6FEB)](#dataset-access)
-[![RSIP Lab](https://img.shields.io/badge/RSIP-SeoulTech-0A66C2)](https://sites.google.com/view/rsip/home)
+[![RSIP Lab](https://img.shields.io/badge/RSIP_LAB-SeoulTech-0A66C2)](https://sites.google.com/view/rsip/home)
 <br>
 [![Data License](https://img.shields.io/badge/Data%20License-Mixed-blueviolet)](#license)
 [![Images License](https://img.shields.io/badge/Images-CC%20BY--NC%204.0-orange)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -104,6 +104,7 @@ MultiVeg defines vegetation classes primarily based on **texture** and **spatial
 | **Background** | Non-vegetated surfaces such as buildings, roads, bare land, water, and other non-vegetation objects |
 | **Tree** | Vegetation with coarse and irregular texture, often associated with canopy structure and distinct shadow patterns |
 | **Low Vegetation** | Grass, shrubs, cropland, and other relatively smooth and homogeneous vegetation surfaces |
+
 
 > **Note**  
 > Since satellite imagery does not directly provide absolute object height, the distinction between **Tree** and **Low Vegetation** is defined by image texture and contextual appearance rather than explicit height measurements.
@@ -206,8 +207,7 @@ Transformer-based models generally showed stronger overall performance than conv
 
 The MultiVeg dataset is available through the following channels:
 
-- **GitHub repository**: [https://github.com/pang914/MultiVeg](https://github.com/pang914/MultiVeg)
-- **RSIP Lab website**: [https://sites.google.com/view/rsip/home](https://sites.google.com/view/rsip/home)
+- **Google Drive Link**: [https://drive.google.com/drive/folders/1ndN-dxFy9cBSA7QTyY4haAu4QAlJaUfo?usp=drive_link](https://drive.google.com/drive/folders/1ndN-dxFy9cBSA7QTyY4haAu4QAlJaUfo?usp=drive_link)
 
 > **Split policy**  
 > MultiVeg is provided as a unified collection of image patches.  
@@ -223,7 +223,7 @@ The MultiVeg dataset is available through the following channels:
 
 ---
 
-## Repository Structure
+## Repository Structure --> ★★수정필요★★
 
 ```text
 MultiVeg/
