@@ -304,4 +304,14 @@ If you use **MultiVeg** in your research, please cite the associated paper:
 paper links:
 - DOI: https://doi.org/10.3390/rs18010028
 - Publisher page: https://www.mdpi.com/2072-4292/18/1/28
+---
+
+## License
+
+MultiVeg uses **mixed data licenses**:
+
+- `images/`: **CC BY-NC 4.0**
+- `masks/`: **CC BY 4.0**
+
+For full details, please see [DATA_LICENSE.md](./DATA_LICENSE.md).
 
