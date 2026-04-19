@@ -1,3 +1,5 @@
+<div align="center">
+
 # MultiVeg: A Very High-Resolution Benchmark for Deep Learning-Based Multi-Class Vegetation Segmentation
 
 [![Project Page](https://img.shields.io/badge/Project%20Page-GitHub-181717?logo=github)](https://github.com/pang914/MultiVeg)
