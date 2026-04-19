@@ -1,29 +1,20 @@
-# MultiVeg Dataset
-
-This repository is reserved for the MultiVeg dataset, which is associated with an academic publication.
-
-🚧 Data availability notice 🚧
-
-The dataset is currently under revision for a journal submission and will be made publicly available after the acceptance and publication of the corresponding paper.
-
-- Current status: Repository placeholder
-- Planned release: Upon paper publication
-- License: To be announced
-
-Please stay tuned.
-26.04.18. Changhui Lee
-
-
 <div align="center">
 
 # MultiVeg: A Very High-Resolution Benchmark for Deep Learning-Based Multi-Class Vegetation Segmentation
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://www.genspark.ai/api/files/s/pa3tq0oO)
-[![Dataset](https://img.shields.io/badge/Dataset-GitHub-blue)](https://github.com/pang914/MultiVeg)
-[![Lab](https://img.shields.io/badge/RSIP-SeoulTech-green)](https://sites.google.com/view/rsip/home)
+[![Project Page](https://img.shields.io/badge/Project%20Page-GitHub-181717?logo=github)](https://github.com/pang914/MultiVeg)
+[![Paper](https://img.shields.io/badge/Paper-Remote%20Sensing-B31B1B)](#citation)
+[![Dataset](https://img.shields.io/badge/Dataset-MultiVeg-1F6FEB)](#dataset-access)
+[![RSIP Lab](https://img.shields.io/badge/RSIP-SeoulTech-0A66C2)](https://sites.google.com/view/rsip/home)
+[![License](https://img.shields.io/badge/License-See%20Section-9E9E9E)](#license)
 
-<!-- Optional: replace with your teaser figure -->
-<!-- ![MultiVeg teaser](./assets/multiveg_teaser.png) -->
+<br>
+
+<!-- Representative image -->
+<img src="./assets/multiveg_banner.png" alt="MultiVeg banner" width="92%">
+
+**Figure 1.** Overview of the **MultiVeg** dataset.  
+A very high-resolution satellite benchmark for **multi-class vegetation segmentation** using **RGB + NIR** imagery from **KOMPSAT-3 / KOMPSAT-3A**.
 
 </div>
 
@@ -31,21 +22,45 @@ Please stay tuned.
 
 ## Introduction
 
-**MultiVeg** is a very high-resolution satellite benchmark for **multi-class vegetation segmentation**.  
-Unlike conventional binary vegetation mapping, MultiVeg distinguishes **Tree** and **Low Vegetation** from **Background**, enabling more detailed urban ecological analysis and vegetation monitoring.
+**MultiVeg** is a very high-resolution satellite benchmark dataset for **deep learning-based multi-class vegetation segmentation**.  
+Unlike conventional binary vegetation mapping, MultiVeg explicitly separates **Tree** and **Low Vegetation** from **Background**, enabling finer-grained vegetation analysis for remote sensing, urban ecological monitoring, and environmental applications.
 
-The dataset is built from **KOMPSAT-3 / KOMPSAT-3A** satellite imagery and contains **RGB + NIR** bands, which help separate vegetation from spectrally confusing surfaces such as shadows, asphalt, and dark roofs.
+Built from **KOMPSAT-3 / KOMPSAT-3A** imagery, MultiVeg provides **RGB + NIR** bands at **0.5 m spatial resolution**.  
+By incorporating NIR information, the dataset improves vegetation discrimination in challenging cases such as shadows, asphalt, and other spectrally confusing surfaces.
 
 ---
 
-## Why MultiVeg
+## Table of Contents
 
-- **Very high spatial resolution**: 0.5 m GSD
-- **Multi-class vegetation segmentation**: Background / Tree / Low Vegetation
-- **Multi-spectral input**: RGB + NIR
-- **Geographic diversity in South Korea**: Seoul, Incheon, and Jeju
-- **Expert-annotated benchmark** for deep learning-based semantic segmentation
-- **Baseline benchmarking** with CNN- and Transformer-based models
+- [Highlights](#highlights)
+- [Dataset Overview](#dataset-overview)
+- [Class Definition](#class-definition)
+- [Dataset Details](#dataset-details)
+  - [Image Pre-processing](#image-pre-processing)
+  - [Annotation and Quality Control](#annotation-and-quality-control)
+- [Sample Visualization](#sample-visualization)
+- [Benchmark Experiments](#benchmark-experiments)
+- [Dataset Access](#dataset-access)
+- [Repository Structure](#repository-structure)
+- [Recommended Usage](#recommended-usage)
+- [Citation](#citation)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgement](#acknowledgement)
+
+---
+
+## Highlights
+
+- **Very high-resolution benchmark** based on satellite imagery at **0.5 m GSD**
+- **Multi-class vegetation segmentation** with three semantic classes:
+  - **Background**
+  - **Tree**
+  - **Low Vegetation**
+- **RGB + NIR** multi-spectral imagery for improved vegetation discrimination
+- **Expert-annotated dataset** with quality control and inter-annotator agreement analysis
+- Benchmarking with representative **CNN-based** and **Transformer-based** segmentation models
+- Diverse scenes collected across **Seoul, Incheon, and Jeju** from **2014 to 2023**
 
 ---
 
@@ -53,19 +68,21 @@ The dataset is built from **KOMPSAT-3 / KOMPSAT-3A** satellite imagery and conta
 
 | Item | Description |
 |---|---|
-| Satellite | KOMPSAT-3, KOMPSAT-3A |
+| Dataset name | MultiVeg |
+| Task | Multi-class vegetation segmentation |
+| Satellite platform | KOMPSAT-3, KOMPSAT-3A |
 | Spatial resolution | 0.5 m |
 | Spectral bands | RGB + NIR |
-| Acquisition years | 2014–2023 |
-| Regions | Seoul, Incheon, Jeju |
+| Acquisition period | 2014–2023 |
+| Study regions | Seoul, Incheon, Jeju (Republic of Korea) |
 | Patch size | 512 × 512 pixels |
-| Total patches | 6,677 |
+| Number of patches | 6,677 |
+| Number of classes | 3 |
 | File format | PNG (8-bit) |
-| Classes | 3 |
 
 ### Regional Distribution
 
-| Region | # Patches | Ratio |
+| Region | Number of Patches | Ratio |
 |---|---:|---:|
 | Incheon | 2,859 | 42.8% |
 | Jeju | 2,518 | 37.7% |
@@ -76,72 +93,125 @@ The dataset is built from **KOMPSAT-3 / KOMPSAT-3A** satellite imagery and conta
 
 ## Class Definition
 
+MultiVeg defines vegetation classes primarily based on **texture** and **spatial context** observed in very high-resolution satellite imagery.
+
 | Class | Description |
 |---|---|
-| **Background** | Non-vegetated surfaces such as roads, buildings, bare soil, water, and other non-vegetation objects |
-| **Tree** | Vegetation with coarse and irregular texture, often associated with canopy structures and distinct shadow patterns |
+| **Background** | Non-vegetated surfaces such as buildings, roads, bare land, water, and other non-vegetation objects |
+| **Tree** | Vegetation with coarse and irregular texture, often associated with canopy structure and distinct shadow patterns |
 | **Low Vegetation** | Grass, shrubs, cropland, and other relatively smooth and homogeneous vegetation surfaces |
 
 > **Note**  
-> In MultiVeg, vegetation classes are distinguished primarily by **texture and spatial context** observed in very high-resolution satellite imagery, rather than absolute height.
+> Since satellite imagery does not directly provide absolute object height, the distinction between **Tree** and **Low Vegetation** is defined by image texture and contextual appearance rather than explicit height measurements.
+
+### Class Legend
+
+<!-- Optional class legend image -->
+<p align="center">
+  <img src="./assets/class_legend.png" alt="Class legend of MultiVeg" width="60%">
+</p>
+
+<p align="center">
+  <em>Figure 2. Class legend of MultiVeg: Background, Tree, and Low Vegetation.</em>
+</p>
 
 ---
 
-## Data Preparation
+## Dataset Details
 
-The MultiVeg dataset was prepared through the following pipeline:
+### Image Pre-processing
 
-1. **Image collection** from KOMPSAT-3 / 3A satellite imagery
-2. **Spatial resolution harmonization** to 0.5 m
-3. **Radiometric normalization** using linear stretching
-4. **Patch extraction** into 512 × 512 image tiles
-5. **Manual annotation** by remote sensing experts
-6. **Quality control** to remove unusable or ambiguous patches
+The MultiVeg dataset was prepared through the following procedure:
+
+1. Collection of very high-resolution KOMPSAT-3 / KOMPSAT-3A satellite imagery  
+2. Resolution harmonization to **0.5 m**  
+3. Radiometric normalization using **linear stretching**  
+4. Conversion to **8-bit PNG** format for efficient storage and model training  
+5. Patch extraction into **512 × 512** tiles  
+6. Quality screening to remove unusable or ambiguous samples  
 
 ### Annotation and Quality Control
 
-- Annotations were conducted using expert knowledge of high-resolution remote sensing imagery.
-- Labeling focused on semantic separation of **Tree**, **Low Vegetation**, and **Background**.
+- All labels were generated by experts in remote sensing image interpretation.
+- Each pixel was annotated as **Background**, **Tree**, or **Low Vegetation**.
 - Ambiguous cases were reviewed through expert discussion and cross-checking.
-- Inter-annotator agreement was evaluated using **Fleiss’s Kappa**.
-- Patches with severe cloud/shadow obstruction, blur, or image distortion were excluded.
+- Annotation consistency was assessed using **Fleiss’s Kappa**.
+- The reported inter-annotator agreement indicates substantial consistency (**Fleiss’s Kappa = 0.6172**).
+- Patches severely affected by cloud cover, extreme shadow obstruction, blur, or radiometric distortion were excluded from the final dataset.
 
 ---
 
-## Benchmark Results
+## Sample Visualization
 
-MultiVeg was evaluated with representative semantic segmentation models, including:
+<p align="center">
+  <img src="./assets/multiveg_samples.png" alt="Qualitative examples of MultiVeg patches and labels" width="92%">
+</p>
 
-- **CNN-based models**: DeepLabV3+, HRNet, PSPNet, UPerNet, ConvNeXt
-- **Transformer-based models**: Swin Transformer, SegFormer, ViT, MIFNet
+<p align="center">
+  <em>Figure 3. Representative examples from MultiVeg. Each example may include an RGB or RGB+NIR composite image and its corresponding pixel-wise annotation mask.</em>
+</p>
 
-### Main Observation
+---
 
-- Transformer-based models generally showed stronger performance than conventional CNN-based models.
-- **Swin Transformer** achieved the best overall result with:
+## Benchmark Experiments
 
-| Metric | Score |
-|---|---:|
-| mIoU | **78.88%** |
-| mF1 | **87.58%** |
-| OA | **92.33%** |
+MultiVeg was benchmarked using representative deep learning segmentation models, including both CNN-based and Transformer-based architectures.
 
-MultiVeg also showed robust performance across different seasons and geographic settings, supporting its utility as a practical benchmark for vegetation mapping in diverse environments.
+### Evaluated Models
+
+- **CNN-based models**
+  - DeepLabV3+
+  - HRNet
+  - PSPNet
+  - UPerNet
+  - ConvNeXt
+
+- **Transformer-based models**
+  - Swin Transformer
+  - SegFormer
+  - Vision Transformer (ViT)
+  - MIFNet
+
+### Main Results
+
+Transformer-based models generally showed stronger overall performance than conventional CNN-based models on the MultiVeg benchmark.
+
+| Best Model | mIoU | mF1 | OA |
+|---|---:|---:|---:|
+| **Swin Transformer** | **78.88** | **87.58** | **92.33** |
+
+### Key Observations
+
+- **Swin Transformer** achieved the best overall segmentation performance on MultiVeg.
+- **Tree** and **Background** were segmented more reliably than **Low Vegetation**.
+- **Low Vegetation** remains more challenging due to class imbalance and spectral ambiguity in complex urban scenes.
+- The inclusion of **NIR** bands improves the discrimination of vegetation from confusing non-vegetated surfaces.
+- The dataset shows robust performance across different seasons and geographic settings.
+
+<p align="center">
+  <img src="./assets/benchmark_results.png" alt="Benchmark performance on MultiVeg" width="78%">
+</p>
+
+<p align="center">
+  <em>Figure 4. Benchmark comparison of representative semantic segmentation models on the MultiVeg dataset.</em>
+</p>
 
 ---
 
 ## Dataset Access
 
-The dataset is available through the following channels:
+The MultiVeg dataset is available through the following channels:
 
-- **GitHub repository**: https://github.com/pang914/MultiVeg
-- **RSIP Lab website**: https://sites.google.com/view/rsip/home
+- **GitHub repository**: [https://github.com/pang914/MultiVeg](https://github.com/pang914/MultiVeg)
+- **RSIP Lab website**: [https://sites.google.com/view/rsip/home](https://sites.google.com/view/rsip/home)
 
-> **Data split policy**  
-> The dataset is provided as a unified collection of patches, and users may define their own **train / validation / test** split depending on the research protocol.
+> **Split policy**  
+> MultiVeg is provided as a unified collection of image patches.  
+> Users may define their own **train / validation / test** split depending on their research protocol.
 
-<!-- Optional:
-## Download
+<!-- Optional official download links -->
+<!--
+### Download
 
 - [Download Link 1](TODO)
 - [Download Link 2](TODO)
@@ -154,17 +224,49 @@ The dataset is available through the following channels:
 ```text
 MultiVeg/
 ├── README.md
+├── assets/
+│   ├── multiveg_banner.png
+│   ├── multiveg_samples.png
+│   ├── class_legend.png
+│   └── benchmark_results.png
 ├── images/
-│   ├── region_01_xxxx.png
+│   ├── *.png
 │   └── ...
 ├── labels/
-│   ├── region_01_xxxx.png
+│   ├── *.png
 │   └── ...
 ├── splits/
 │   ├── train.txt
 │   ├── val.txt
 │   └── test.txt
-└── assets/
-    ├── multiveg_teaser.png
-    ├── class_legend.png
-    └── benchmark_overview.png
+└── docs/
+    └── ...
+```
+---
+
+## Recommended Usage
+
+MultiVeg can be used for:
+ - Multi-class vegetation segmentation
+ - Urban green space monitoring
+ - Ecological and envirionmental remote sensing
+ - RGB vs. RGB+NIR comparative experiments
+ - Benchmarking semantic segmentation models on very high-resolution imagery
+
+---
+## Citation
+
+If you use **MultiVeg** in your research, please cite the associated paper:
+
+```text
+@article{lee2025multiveg,
+  title={MultiVeg: A Very High-Resolution Benchmark for Deep Learning-Based Multi-Class Vegetation Segmentation},
+  author={Lee, Changhui and Han, Youkyung and Lee, Jinmin and Kim, Taeheon and Lee, Hyunjin and Javed, Aisha and Chung, Minkyung},
+  journal={Remote Sensing},
+  year={2025}
+}
+```
+---
+## License
+
+
