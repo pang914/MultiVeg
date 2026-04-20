@@ -7,7 +7,6 @@
 [![Paper](https://img.shields.io/badge/Paper-Remote%20Sensing-B31B1B)](https://doi.org/10.3390/rs18010028)
 [![Dataset](https://img.shields.io/badge/Dataset-MultiVeg-1F6FEB)](#dataset-access)
 [![RSIP Lab](https://img.shields.io/badge/RSIP_LAB-SeoulTech-0A66C2)](https://sites.google.com/view/rsip/home)
-
 <br>
 
 [![Data License](https://img.shields.io/badge/Data%20License-Mixed-blueviolet)](#license)
