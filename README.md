@@ -218,11 +218,11 @@ Transformer-based models generally showed stronger overall performance than conv
 - The dataset shows robust performance across different seasons and geographic settings.
 
 <p align="center">
-  <img src="./assets/benchmark_results.png" alt="Benchmark performance on MultiVeg" width="78%">
+  <img src="visual_performance.png" alt="Benchmark performance on MultiVeg" width="78%">
 </p>
 
 <p align="center">
-  <em>Figure 4. Benchmark comparison of representative semantic segmentation models on the MultiVeg dataset.</em>
+  <em>Figure 4. Benchmark comparison of representative semantic segmentation models on the MultiVeg dataset (Visual results).</em>
 </p>
 
 ---
