@@ -55,9 +55,6 @@ We also welcome suggestions, academic discussions, and potential collaborations.
 - [Recommended Usage](#recommended-usage)
 - [Citation](#citation)
 - [License](#license)
-- [Contact](#contact)
-- [Acknowledgement](#acknowledgement)
-
 ---
 
 ## Updates
@@ -256,20 +253,6 @@ MultiVeg/
 │   ├── multiveg_samples.png
 │   ├── class_legend.png
 │   └── benchmark_results.png
-├── images/
-│   ├── LICENSE.md
-│   ├── *.png
-│   └── ...
-├── masks/
-│   ├── LICENSE.md
-│   ├── *.png
-│   └── ...
-├── splits/
-│   ├── train.txt
-│   ├── val.txt
-│   └── test.txt
-└── docs/
-    └── ...
 
 ```
 
