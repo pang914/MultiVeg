@@ -16,7 +16,7 @@
 <br>
 
 <!-- Representative image -->
-<img src="./assets/MultiVeg_banner.png" alt="MultiVeg banner" width="92%">
+<img src="./MultiVeg_banner.png" alt="MultiVeg banner" width="92%">
 
 **Figure 1.** Overview of the **MultiVeg** dataset.  
 A very high-resolution satellite benchmark for **multi-class vegetation segmentation** using **RGB + NIR** imagery from **KOMPSAT-3 / KOMPSAT-3A**.
