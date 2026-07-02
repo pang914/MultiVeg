@@ -140,7 +140,7 @@ MultiVeg defines vegetation classes primarily based on **texture** and **spatial
 ### Class Legend
 
 <p align="center">
-  <img src="./assets/class_legend.png" alt="Class legend of MultiVeg" width="60%">
+  <img src="class_legend.png" alt="Class legend of MultiVeg" width="60%">
 </p>
 
 <p align="center">
@@ -176,7 +176,7 @@ The MultiVeg dataset was prepared through the following procedure:
 ## Sample Visualization
 
 <p align="center">
-  <img src="./assets/multiveg_samples.png" alt="Qualitative examples of MultiVeg patches and labels" width="92%">
+  <img src="label_example.png" alt="Qualitative examples of MultiVeg patches and labels" width="92%">
 </p>
 
 <p align="center">
