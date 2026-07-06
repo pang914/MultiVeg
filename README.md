@@ -190,7 +190,7 @@ All models were trained and evaluated under the same experimental settings using
 #### Overall Performance
 
 | Model | OA | mIoU | mF1 | mPrecision | mRecall | Pretrained Weights |
-|---|---:|---:|---:|---:|---:|---|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DeepLabV3+ | 89.52 | 70.28 | 80.79 | 85.87 | 78.11 | [Download](GOOGLE_DRIVE_LINK_DEEPLABV3PLUS) |
 | HRNet | 90.45 | 74.34 | 84.27 | 84.74 | 83.86 | [Download](GOOGLE_DRIVE_LINK_HRNET) |
 | PSPNet | 91.05 | 75.91 | 85.44 | 85.22 | 85.67 | [Download](GOOGLE_DRIVE_LINK_PSPNET) |
@@ -204,7 +204,7 @@ All models were trained and evaluated under the same experimental settings using
 #### Class-wise Performance
 
 | Model | Background IoU | Tree IoU | Low Vegetation IoU | Background F1 | Tree F1 | Low Vegetation F1 |
-|---|---:|---:|---:|---:|---:|---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DeepLabV3+ | 88.77 | 83.79 | 56.17 | 94.05 | 91.18 | 71.94 |
 | HRNet | 88.12 | 82.74 | 52.18 | 93.68 | 90.55 | 68.57 |
 | PSPNet | 89.02 | 83.56 | 55.16 | 94.19 | 91.05 | 71.10 |
