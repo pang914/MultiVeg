@@ -191,15 +191,16 @@ All models were trained and evaluated under the same experimental settings using
 
 | Category | Model | OA | mIoU | mF1 | mPrecision | mRecall | Pretrained Weights |
 |---|---|---:|---:|---:|---:|---:|---|
-| CNN-based | DeepLabV3+ | 89.52 | 70.28 | 80.79 | 85.87 | 78.11 | [Download .pth](GOOGLE_DRIVE_LINK_DEEPLABV3PLUS) |
-| CNN-based | HRNet | 90.45 | 74.34 | 84.27 | 84.74 | 83.86 | [Download .pth](GOOGLE_DRIVE_LINK_HRNET) |
-| CNN-based | PSPNet | 91.05 | 75.91 | 85.44 | 85.22 | 85.67 | [Download .pth](GOOGLE_DRIVE_LINK_PSPNET) |
-| CNN-based | UPerNet | 90.94 | 75.12 | 84.83 | 86.56 | 83.54 | [Download .pth](GOOGLE_DRIVE_LINK_UPERNET) |
-| CNN-based | ConvNeXt | 92.31 | 78.81 | 87.56 | 88.25 | 86.70 | [Download .pth](GOOGLE_DRIVE_LINK_CONVNEXT) |
-| Transformer-based | SegFormer | 91.82 | 77.70 | 86.76 | 87.53 | 86.05 | [Download .pth](GOOGLE_DRIVE_LINK_SEGFORMER) |
-| Transformer-based | **Swin Transformer** | **92.33** | **78.88** | **87.58** | **88.40** | **86.83** | [Download .pth](GOOGLE_DRIVE_LINK_SWIN_TRANSFORMER) |
-| Transformer-based | Vision Transformer (ViT) | 92.00 | 77.93 | 87.49 | 88.21 | 85.86 | [Download .pth](GOOGLE_DRIVE_LINK_VIT) |
-| Transformer-based | MIFNet | 91.29 | 75.74 | 85.27 | 86.80 | 84.06 | [Download .pth](GOOGLE_DRIVE_LINK_MIFNET) |
+| **CNN-based** | DeepLabV3+ | 89.52 | 70.28 | 80.79 | 85.87 | 78.11 | [Download .pth](GOOGLE_DRIVE_LINK_DEEPLABV3PLUS) |
+|  | HRNet | 90.45 | 74.34 | 84.27 | 84.74 | 83.86 | [Download .pth](GOOGLE_DRIVE_LINK_HRNET) |
+|  | PSPNet | <u>91.05</u> | <u>75.91</u> | <u>85.44</u> | 85.22 | <u>85.67</u> | [Download .pth](GOOGLE_DRIVE_LINK_PSPNET) |
+|  | UPerNet | 90.94 | 75.12 | 84.83 | <u>86.56</u> | 83.54 | [Download .pth](GOOGLE_DRIVE_LINK_UPERNET) |
+|  | ConvNeXt | **92.31** | **78.81** | **87.56** | **88.25** | **86.70** | [Download .pth](GOOGLE_DRIVE_LINK_CONVNEXT) |
+| **────────** | **────────** | **────────** | **────────** | **────────** | **────────** | **────────** | **────────** |
+| **Transformer-based** | SegFormer | 91.82 | 77.70 | 86.76 | 87.53 | <u>86.05</u> | [Download .pth](GOOGLE_DRIVE_LINK_SEGFORMER) |
+|  | **Swin Transformer** | **92.33** | **78.88** | **87.58** | **88.40** | **86.83** | [Download .pth](GOOGLE_DRIVE_LINK_SWIN_TRANSFORMER) |
+|  | Vision Transformer (ViT) | <u>92.00</u> | <u>77.93</u> | <u>87.49</u> | <u>88.21</u> | 85.86 | [Download .pth](GOOGLE_DRIVE_LINK_VIT) |
+|  | MIFNet | 91.29 | 75.74 | 85.27 | 86.80 | 84.06 | [Download .pth](GOOGLE_DRIVE_LINK_MIFNET) |
 
 > The best performance for each metric is highlighted in **bold**.
 
