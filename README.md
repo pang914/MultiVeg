@@ -191,15 +191,15 @@ All models were trained and evaluated under the same experimental settings using
 
 | Model | OA | mIoU | mF1 | mPrecision | mRecall | Pretrained Weights |
 |---|---:|---:|---:|---:|---:|---|
-| DeepLabV3+ | 89.52 | 70.28 | 80.79 | 85.87 | 78.11 | [Download .pth](GOOGLE_DRIVE_LINK_DEEPLABV3PLUS) |
-| HRNet | 90.45 | 74.34 | 84.27 | 84.74 | 83.86 | [Download .pth](GOOGLE_DRIVE_LINK_HRNET) |
-| PSPNet | 91.05 | 75.91 | 85.44 | 85.22 | 85.67 | [Download .pth](GOOGLE_DRIVE_LINK_PSPNET) |
-| UPerNet | 90.94 | 75.12 | 84.83 | 86.56 | 83.54 | [Download .pth](GOOGLE_DRIVE_LINK_UPERNET) |
-| ConvNeXt | <u>92.31</u> | <u>78.81</u> | <u>87.56</u> | <u>88.25</u> | <u>86.70</u> | [Download .pth](GOOGLE_DRIVE_LINK_CONVNEXT) |
-| SegFormer | 91.82 | 77.70 | 86.76 | 87.53 | 86.05 | [Download .pth](GOOGLE_DRIVE_LINK_SEGFORMER) |
-| **Swin Transformer** | **92.33** | **78.88** | **87.58** | **88.40** | **86.83** | [Download .pth](GOOGLE_DRIVE_LINK_SWIN_TRANSFORMER) |
-| Vision Transformer (ViT) | 92.00 | 77.93 | 87.49 | 88.21 | 85.86 | [Download .pth](GOOGLE_DRIVE_LINK_VIT) |
-| MIFNet | 91.29 | 75.74 | 85.27 | 86.80 | 84.06 | [Download .pth](GOOGLE_DRIVE_LINK_MIFNET) |
+| DeepLabV3+ | 89.52 | 70.28 | 80.79 | 85.87 | 78.11 | [Download](GOOGLE_DRIVE_LINK_DEEPLABV3PLUS) |
+| HRNet | 90.45 | 74.34 | 84.27 | 84.74 | 83.86 | [Download](GOOGLE_DRIVE_LINK_HRNET) |
+| PSPNet | 91.05 | 75.91 | 85.44 | 85.22 | 85.67 | [Download](GOOGLE_DRIVE_LINK_PSPNET) |
+| UPerNet | 90.94 | 75.12 | 84.83 | 86.56 | 83.54 | [Download](GOOGLE_DRIVE_LINK_UPERNET) |
+| ConvNeXt | <u>92.31</u> | <u>78.81</u> | <u>87.56</u> | <u>88.25</u> | <u>86.70</u> | [Download](GOOGLE_DRIVE_LINK_CONVNEXT) |
+| SegFormer | 91.82 | 77.70 | 86.76 | 87.53 | 86.05 | [Download](GOOGLE_DRIVE_LINK_SEGFORMER) |
+| **Swin Transformer** | **92.33** | **78.88** | **87.58** | **88.40** | **86.83** | [Download](GOOGLE_DRIVE_LINK_SWIN_TRANSFORMER) |
+| Vision Transformer (ViT) | 92.00 | 77.93 | 87.49 | 88.21 | 85.86 | [Download](GOOGLE_DRIVE_LINK_VIT) |
+| MIFNet | 91.29 | 75.74 | 85.27 | 86.80 | 84.06 | [Download](GOOGLE_DRIVE_LINK_MIFNET) |
 
 #### Class-wise Performance
 
