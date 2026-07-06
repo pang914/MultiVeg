@@ -184,47 +184,40 @@ The MultiVeg dataset was prepared through the following procedure:
 
 ## Benchmark Experiments
 
-MultiVeg was benchmarked using representative deep learning segmentation models, including both CNN-based and Transformer-based architectures.
+MultiVeg was benchmarked using representative deep learning-based semantic segmentation models, including both CNN-based and Transformer-based architectures.  
+All models were trained and evaluated under the same experimental settings using **4-band RGB + NIR imagery**.
 
-### Evaluated Models
+### Evaluated Models and Main Results
 
-- **CNN-based models**
-  - DeepLabV3+
-  - HRNet
-  - PSPNet
-  - UPerNet
-  - ConvNeXt
+| Category | Model | OA | mIoU | mF1 | mPrecision | mRecall | Pretrained Weights |
+|---|---|---:|---:|---:|---:|---:|---|
+| CNN-based | DeepLabV3+ | 89.52 | 70.28 | 80.79 | 85.87 | 78.11 | [Download .pth](GOOGLE_DRIVE_LINK_DEEPLABV3PLUS) |
+| CNN-based | HRNet | 90.45 | 74.34 | 84.27 | 84.74 | 83.86 | [Download .pth](GOOGLE_DRIVE_LINK_HRNET) |
+| CNN-based | PSPNet | 91.05 | 75.91 | 85.44 | 85.22 | 85.67 | [Download .pth](GOOGLE_DRIVE_LINK_PSPNET) |
+| CNN-based | UPerNet | 90.94 | 75.12 | 84.83 | 86.56 | 83.54 | [Download .pth](GOOGLE_DRIVE_LINK_UPERNET) |
+| CNN-based | ConvNeXt | 92.31 | 78.81 | 87.56 | 88.25 | 86.70 | [Download .pth](GOOGLE_DRIVE_LINK_CONVNEXT) |
+| Transformer-based | SegFormer | 91.82 | 77.70 | 86.76 | 87.53 | 86.05 | [Download .pth](GOOGLE_DRIVE_LINK_SEGFORMER) |
+| Transformer-based | **Swin Transformer** | **92.33** | **78.88** | **87.58** | **88.40** | **86.83** | [Download .pth](GOOGLE_DRIVE_LINK_SWIN_TRANSFORMER) |
+| Transformer-based | Vision Transformer (ViT) | 92.00 | 77.93 | 87.49 | 88.21 | 85.86 | [Download .pth](GOOGLE_DRIVE_LINK_VIT) |
+| Transformer-based | MIFNet | 91.29 | 75.74 | 85.27 | 86.80 | 84.06 | [Download .pth](GOOGLE_DRIVE_LINK_MIFNET) |
 
-- **Transformer-based models**
-  - Swin Transformer
-  - SegFormer
-  - Vision Transformer (ViT)
-  - MIFNet
-
-### Main Results
-
-Transformer-based models generally showed stronger overall performance than conventional CNN-based models on the MultiVeg benchmark.
-
-| Best Model | mIoU | mF1 | OA |
-|---|---:|---:|---:|
-| **Swin Transformer** | **78.88** | **87.58** | **92.33** |
+> The best performance for each metric is highlighted in **bold**.
 
 ### Key Observations
 
-- **Swin Transformer** achieved the best overall segmentation performance on MultiVeg.
+- **Swin Transformer** achieved the best overall performance on the MultiVeg benchmark, with an **mIoU of 78.88**, **mF1 of 87.58**, and **OA of 92.33**.
+- **ConvNeXt** also showed competitive performance among CNN-based models.
 - **Tree** and **Background** were segmented more reliably than **Low Vegetation**.
-- **Low Vegetation** remains more challenging due to class imbalance and spectral ambiguity in complex urban scenes.
-- The inclusion of **NIR** bands improves the discrimination of vegetation from confusing non-vegetated surfaces.
-- The dataset shows robust performance across different seasons and geographic settings.
+- **Low Vegetation** remains challenging due to class imbalance and spectral ambiguity in complex urban scenes.
+- The use of **NIR** bands helps improve vegetation discrimination from spectrally confusing non-vegetated surfaces.
 
 <p align="center">
   <img src="visual_performance.png" alt="Benchmark performance on MultiVeg" width="78%">
 </p>
 
 <p align="center">
-  <em>Figure 4. Benchmark comparison of representative semantic segmentation models on the MultiVeg dataset (Visual results).</em>
+  <em>Figure 4. Visual comparison of representative semantic segmentation models on the MultiVeg dataset.</em>
 </p>
-
 ---
 
 ## Dataset Access
